@@ -68,17 +68,45 @@
         } else {
           
           for(NSDictionary *key in rootObject) {
+            
             if ([key isEqual:@"Hotels"]) {
               NSDictionary *hotels = [rootObject objectForKey:@"Hotels"];
-              //NSLog(@"this is the #of hotels from json: %lu", hotels.count);
               for (NSDictionary *hotel in hotels) {
                 NSString *hotelName = [hotel objectForKey:@"name"];
-                //NSLog(@"%@", hotelName);
+                NSString *hotelLocation = [hotel objectForKey:@"location"];
                 NSNumber *hotelStars = [hotel objectForKey:@"stars"];
-                //NSLog(@"%@", hotelStars);
-                Hotel *hotel = [NSEntityDescription insertNewObjectForEntityForName:@"Hotel" inManagedObjectContext:self.managedObjectContext];
-                hotel.name = hotelName;
-                hotel.stars = hotelStars; 
+                
+                NSNumber *roomNumber;
+                NSNumber *bedCount;
+                NSNumber *priceTier;
+                
+                Hotel *newHotel = [NSEntityDescription insertNewObjectForEntityForName:@"Hotel" inManagedObjectContext:self.managedObjectContext];
+                newHotel.name = hotelName;
+                newHotel.location = hotelLocation;
+                newHotel.stars = hotelStars;
+                
+                
+                for (NSDictionary *key in hotel){
+                  if ([key isEqual:@"rooms"]){
+                    NSDictionary *rooms = [hotel objectForKey:@"rooms"];
+                    for (NSDictionary *room in rooms){
+                      roomNumber = [room objectForKey:@"number"];
+                      bedCount = [room objectForKey:@"beds"];
+                      priceTier = [room objectForKey:@"rate"];
+                      
+                      Room *room = [NSEntityDescription insertNewObjectForEntityForName:@"Room" inManagedObjectContext:self.managedObjectContext];
+                      room.roomNumber = roomNumber;
+                      room.bedCount = bedCount;
+                      room.priceTier = priceTier;
+                      room.hotel = newHotel;
+                    }
+                  }
+                }
+                
+//                Hotel *hotel = [NSEntityDescription insertNewObjectForEntityForName:@"Hotel" inManagedObjectContext:self.managedObjectContext];
+//                hotel.name = hotelName;
+//                hotel.location = hotelLocation;
+//                hotel.stars = hotelStars; 
               }
 
             }

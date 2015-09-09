@@ -12,7 +12,9 @@
 
 @implementation Room
 
-@dynamic number;
+@dynamic roomNumber;
+@dynamic bedCount;
+@dynamic priceTier;
 @dynamic hotel;
 
 @end

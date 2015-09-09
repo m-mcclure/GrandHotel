@@ -13,7 +13,9 @@
 
 @interface Room : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * number;
+@property (nonatomic, retain) NSNumber *roomNumber;
+@property (nonatomic, retain) NSNumber *bedCount;
+@property (nonatomic, retain) NSNumber *priceTier;
 @property (nonatomic, retain) Hotel *hotel;
 
 @end
