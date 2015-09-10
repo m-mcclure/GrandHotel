@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainMenuViewController.h"
 #import "HotelListViewController.h"
 #import "Hotel.h"
 #import "Room.h"
@@ -31,7 +32,12 @@
   HotelListViewController *hotelListViewController = [[HotelListViewController alloc] init];
   hotelListViewController.view.backgroundColor = [UIColor whiteColor];
   
-  self.window.rootViewController = hotelListViewController;
+  MainMenuViewController *mainMenuVewController = [[MainMenuViewController alloc]init];
+  
+  UINavigationController *hotelNavigationController = [[UINavigationController alloc] initWithRootViewController:mainMenuVewController];
+  //mainMenuViewController.view.backgroundColor = [UIColor yellowColor];
+  
+  self.window.rootViewController = hotelNavigationController;
   
     //NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Hotel"];
   
@@ -84,8 +90,7 @@
                 newHotel.name = hotelName;
                 newHotel.location = hotelLocation;
                 newHotel.stars = hotelStars;
-                
-                
+                //NSLog(@"number of rooms before: %lu\n\n\n\n", (unsigned long)newHotel.rooms.count);
                 for (NSDictionary *key in hotel){
                   if ([key isEqual:@"rooms"]){
                     NSDictionary *rooms = [hotel objectForKey:@"rooms"];
@@ -99,9 +104,13 @@
                       room.bedCount = bedCount;
                       room.priceTier = priceTier;
                       room.hotel = newHotel;
+                      NSLog(@"number of rooms %lu", (unsigned long)newHotel.rooms.count);
                     }
                   }
+                  //NSLog(@"number of rooms after: %lu\n\n\n\n", (unsigned long)newHotel.rooms.count);
                 }
+                
+                
                 
 //                Hotel *hotel = [NSEntityDescription insertNewObjectForEntityForName:@"Hotel" inManagedObjectContext:self.managedObjectContext];
 //                hotel.name = hotelName;

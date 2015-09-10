@@ -8,6 +8,7 @@
 
 #import "HotelListViewController.h"
 #import "AppDelegate.h"
+#import "Hotel.h"
 
 @interface HotelListViewController ()
 
@@ -54,15 +55,7 @@
   NSError *fetchError;
   self.hotels = [appDelegate.managedObjectContext executeFetchRequest:fetchRequest error:&fetchError];
   
-  //NSLog(@"hotel count: %lu", (unsigned long)self.hotels.count);
-  
-  for (int i = 0; i < self.hotels.count; i++){
-    
-    NSLog(@"%@", self.hotels[i]);
-    
-  }
-  
-  
+  NSLog(@"hotel count: %lu", (unsigned long)self.hotels.count);
   
   
   if (fetchError) {
@@ -97,9 +90,11 @@
   
   int dataIndex = (int) indexPath.row % [self.hotels count];
   NSString *hotelName = [self.hotels[dataIndex] name];
+  Hotel *thisHotel = self.hotels[dataIndex];
   cell.textLabel.text = hotelName;
   cell.textLabel.numberOfLines = 0;
   cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
+  NSLog(@"***%@ has: %lu rooms", thisHotel.name, thisHotel.rooms.count);
   
   NSDictionary *views = @{@"label":cell.textLabel};
   NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label]|"
