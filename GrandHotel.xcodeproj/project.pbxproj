@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		344E08021BA38CF400392491 /* SelectArrivalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344E08011BA38CF400392491 /* SelectArrivalViewController.m */; };
+		344E08051BA38D0100392491 /* SelectDepartureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344E08041BA38D0100392491 /* SelectDepartureViewController.m */; };
+		344E08081BA38D1500392491 /* ChooseRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344E08071BA38D1500392491 /* ChooseRoomViewController.m */; };
+		344E080B1BA38D2700392491 /* ConfirmReservationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344E080A1BA38D2700392491 /* ConfirmReservationViewController.m */; };
 		3455B9161B9FC27C00871896 /* hotels.json in Resources */ = {isa = PBXBuildFile; fileRef = 3455B9151B9FC27C00871896 /* hotels.json */; };
 		345E61751B9E28EC00DE80B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E61741B9E28EC00DE80B9 /* main.m */; };
 		345E61781B9E28ED00DE80B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E61771B9E28ED00DE80B9 /* AppDelegate.m */; };
@@ -36,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		344E08001BA38CF400392491 /* SelectArrivalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectArrivalViewController.h; sourceTree = "<group>"; };
+		344E08011BA38CF400392491 /* SelectArrivalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectArrivalViewController.m; sourceTree = "<group>"; };
+		344E08031BA38D0100392491 /* SelectDepartureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDepartureViewController.h; sourceTree = "<group>"; };
+		344E08041BA38D0100392491 /* SelectDepartureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDepartureViewController.m; sourceTree = "<group>"; };
+		344E08061BA38D1500392491 /* ChooseRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseRoomViewController.h; sourceTree = "<group>"; };
+		344E08071BA38D1500392491 /* ChooseRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseRoomViewController.m; sourceTree = "<group>"; };
+		344E08091BA38D2700392491 /* ConfirmReservationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmReservationViewController.h; sourceTree = "<group>"; };
+		344E080A1BA38D2700392491 /* ConfirmReservationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmReservationViewController.m; sourceTree = "<group>"; };
 		3455B9151B9FC27C00871896 /* hotels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hotels.json; sourceTree = "<group>"; };
 		345E616F1B9E28EC00DE80B9 /* GrandHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandHotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E61731B9E28EC00DE80B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,7 +137,15 @@
 				34E3AFF01BA355EE009BBCE3 /* RoomListViewController.m */,
 				34E3AFE91BA34CD7009BBCE3 /* GetARoomViewController.h */,
 				34E3AFEA1BA34CD7009BBCE3 /* GetARoomViewController.m */,
+				344E08001BA38CF400392491 /* SelectArrivalViewController.h */,
+				344E08011BA38CF400392491 /* SelectArrivalViewController.m */,
+				344E08031BA38D0100392491 /* SelectDepartureViewController.h */,
+				344E08041BA38D0100392491 /* SelectDepartureViewController.m */,
+				344E08061BA38D1500392491 /* ChooseRoomViewController.h */,
+				344E08071BA38D1500392491 /* ChooseRoomViewController.m */,
 				34E3AFEC1BA34CE9009BBCE3 /* ExistingReservationsViewController.h */,
+				344E08091BA38D2700392491 /* ConfirmReservationViewController.h */,
+				344E080A1BA38D2700392491 /* ConfirmReservationViewController.m */,
 				34E3AFED1BA34CE9009BBCE3 /* ExistingReservationsViewController.m */,
 				345E61821B9E28ED00DE80B9 /* Images.xcassets */,
 				345E61841B9E28ED00DE80B9 /* LaunchScreen.xib */,
@@ -265,12 +285,16 @@
 				348A26E01BA26162008BCA2F /* Hotel.m in Sources */,
 				348A26D71BA26161008BCA2F /* Reservation.m in Sources */,
 				345E61A31B9E479F00DE80B9 /* HotelListViewController.m in Sources */,
+				344E08051BA38D0100392491 /* SelectDepartureViewController.m in Sources */,
 				348A26DA1BA26162008BCA2F /* Guest.m in Sources */,
+				344E08021BA38CF400392491 /* SelectArrivalViewController.m in Sources */,
 				34E3AFEB1BA34CD7009BBCE3 /* GetARoomViewController.m in Sources */,
 				34E3AFE81BA34B8B009BBCE3 /* MainMenuViewController.m in Sources */,
 				345E61781B9E28ED00DE80B9 /* AppDelegate.m in Sources */,
 				34E3AFF11BA355EE009BBCE3 /* RoomListViewController.m in Sources */,
+				344E08081BA38D1500392491 /* ChooseRoomViewController.m in Sources */,
 				34E3AFEE1BA34CE9009BBCE3 /* ExistingReservationsViewController.m in Sources */,
+				344E080B1BA38D2700392491 /* ConfirmReservationViewController.m in Sources */,
 				345E61751B9E28EC00DE80B9 /* main.m in Sources */,
 				348A26DD1BA26162008BCA2F /* Room.m in Sources */,
 				345E617B1B9E28ED00DE80B9 /* GrandHotel.xcdatamodeld in Sources */,

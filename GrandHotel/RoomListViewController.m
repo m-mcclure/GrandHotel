@@ -10,9 +10,12 @@
 #import "HotelListViewController.h"
 #import "AppDelegate.h"
 #import "Hotel.h"
+#import "Room.h"
 
 
 @interface RoomListViewController ()
+
+@property (strong, nonatomic) NSMutableArray *roomNumbers;
 
 @end
 
@@ -40,6 +43,14 @@
     [super viewDidLoad];
   self.tableView.delegate = self;
   self.tableView.dataSource = self;
+  
+  for (Room *room in self.rooms) {
+    NSLog(@"#####%@", room.number);
+    [self.roomNumbers addObject:room.number.description];
+  }
+  
+  NSLog(@"here here: %lu", (unsigned long)self.rooms.count);
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,11 +76,15 @@
   cell.backgroundColor = [UIColor colorWithRed:249.0/255 green:237.0/255 blue:224.0/255 alpha:1.0];
   
   int dataIndex = (int) indexPath.row % [self.rooms count];
-//  //NSNumber *hotelName = [self.rooms[dataIndex] number];
-//  Room *roomForRow = [self.rooms[dataIndex]];
+  
+//  for (Room *room in self.rooms){
+//
+//  }
+  
+  //NSNumber *roomNum = self.rooms[dataIndex].number;
+  //Room *roomForRow = self.rooms[dataIndex];
 //  NSNumber *roomNum = [self.rooms[dataIndex] number];
-//  cell.textLabel.text = hotelName;
-  cell.textLabel.text = @"\(dataIndex)";
+  //cell.textLabel.text = room.number.description;
   cell.textLabel.numberOfLines = 0;
   cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
   
