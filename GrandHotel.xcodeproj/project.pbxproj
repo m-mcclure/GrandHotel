@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		344B21421BA1F90500CB6AB6 /* GetARoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344B21411BA1F90500CB6AB6 /* GetARoomViewController.m */; };
-		344B21451BA1F92000CB6AB6 /* ExistingReservationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344B21441BA1F92000CB6AB6 /* ExistingReservationsViewController.m */; };
 		3455B9111B9F59A500871896 /* Reservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3455B9101B9F59A500871896 /* Reservation.m */; };
 		3455B9141B9F5A4200871896 /* Guest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3455B9131B9F5A4200871896 /* Guest.m */; };
 		3455B9161B9FC27C00871896 /* hotels.json in Resources */ = {isa = PBXBuildFile; fileRef = 3455B9151B9FC27C00871896 /* hotels.json */; };
-		3455B9191BA0BEB000871896 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3455B9181BA0BEB000871896 /* MainMenuViewController.m */; };
 		345E61751B9E28EC00DE80B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E61741B9E28EC00DE80B9 /* main.m */; };
 		345E61781B9E28ED00DE80B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E61771B9E28ED00DE80B9 /* AppDelegate.m */; };
 		345E617B1B9E28ED00DE80B9 /* GrandHotel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 345E61791B9E28ED00DE80B9 /* GrandHotel.xcdatamodeld */; };
@@ -36,17 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		344B21401BA1F90500CB6AB6 /* GetARoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetARoomViewController.h; sourceTree = "<group>"; };
-		344B21411BA1F90500CB6AB6 /* GetARoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetARoomViewController.m; sourceTree = "<group>"; };
-		344B21431BA1F92000CB6AB6 /* ExistingReservationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExistingReservationsViewController.h; sourceTree = "<group>"; };
-		344B21441BA1F92000CB6AB6 /* ExistingReservationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExistingReservationsViewController.m; sourceTree = "<group>"; };
 		3455B90F1B9F59A500871896 /* Reservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reservation.h; sourceTree = "<group>"; };
 		3455B9101B9F59A500871896 /* Reservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reservation.m; sourceTree = "<group>"; };
 		3455B9121B9F5A4200871896 /* Guest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guest.h; sourceTree = "<group>"; };
 		3455B9131B9F5A4200871896 /* Guest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guest.m; sourceTree = "<group>"; };
 		3455B9151B9FC27C00871896 /* hotels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hotels.json; sourceTree = "<group>"; };
-		3455B9171BA0BEB000871896 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
-		3455B9181BA0BEB000871896 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		345E616F1B9E28EC00DE80B9 /* GrandHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandHotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E61731B9E28EC00DE80B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		345E61741B9E28EC00DE80B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,14 +108,10 @@
 			children = (
 				345E61761B9E28EC00DE80B9 /* AppDelegate.h */,
 				345E61771B9E28ED00DE80B9 /* AppDelegate.m */,
-				3455B9171BA0BEB000871896 /* MainMenuViewController.h */,
-				3455B9181BA0BEB000871896 /* MainMenuViewController.m */,
 				345E61A11B9E479F00DE80B9 /* HotelListViewController.h */,
 				345E61A21B9E479F00DE80B9 /* HotelListViewController.m */,
-				344B21401BA1F90500CB6AB6 /* GetARoomViewController.h */,
-				344B21411BA1F90500CB6AB6 /* GetARoomViewController.m */,
-				344B21431BA1F92000CB6AB6 /* ExistingReservationsViewController.h */,
-				344B21441BA1F92000CB6AB6 /* ExistingReservationsViewController.m */,
+				345E617C1B9E28ED00DE80B9 /* ViewController.h */,
+				345E617D1B9E28ED00DE80B9 /* ViewController.m */,
 				345E61821B9E28ED00DE80B9 /* Images.xcassets */,
 				345E61841B9E28ED00DE80B9 /* LaunchScreen.xib */,
 				345E61791B9E28ED00DE80B9 /* GrandHotel.xcdatamodeld */,
@@ -139,8 +126,6 @@
 				3455B9151B9FC27C00871896 /* hotels.json */,
 				345E61731B9E28EC00DE80B9 /* Info.plist */,
 				345E61741B9E28EC00DE80B9 /* main.m */,
-				345E617C1B9E28ED00DE80B9 /* ViewController.h */,
-				345E617D1B9E28ED00DE80B9 /* ViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -264,11 +249,8 @@
 			files = (
 				345E61A01B9E439C00DE80B9 /* Hotel.m in Sources */,
 				345E619D1B9E439B00DE80B9 /* Room.m in Sources */,
-				344B21451BA1F92000CB6AB6 /* ExistingReservationsViewController.m in Sources */,
 				3455B9111B9F59A500871896 /* Reservation.m in Sources */,
-				344B21421BA1F90500CB6AB6 /* GetARoomViewController.m in Sources */,
 				345E61A31B9E479F00DE80B9 /* HotelListViewController.m in Sources */,
-				3455B9191BA0BEB000871896 /* MainMenuViewController.m in Sources */,
 				345E61781B9E28ED00DE80B9 /* AppDelegate.m in Sources */,
 				345E61751B9E28EC00DE80B9 /* main.m in Sources */,
 				3455B9141B9F5A4200871896 /* Guest.m in Sources */,
