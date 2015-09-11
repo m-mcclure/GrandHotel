@@ -13,6 +13,7 @@
 
 @property (strong,nonatomic) UILabel *selectLabel;
 @property (strong,nonatomic) UIDatePicker *datePicker;
+@property (strong,nonatomic) NSDate *dateSelected;
 @property (strong,nonatomic) UIButton *nextButton;
 
 @end
@@ -80,8 +81,11 @@
 
 -(void)nextButtonPressed:(UIButton *)sender {
   NSLog(@"b was pressed");
+  
+  //get date from picker
+  self.dateSelected = [self.datePicker date];
+  NSLog(@"%@", self.dateSelected);
   SelectDepartureViewController *selectDepartureVC = [[SelectDepartureViewController alloc] init];
-  //selectDepartureVC.rooms = [selectDepartureVC rooms];
   [self.navigationController pushViewController:selectDepartureVC animated:YES];
 }
 
