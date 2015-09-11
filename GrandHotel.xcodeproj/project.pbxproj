@@ -24,7 +24,6 @@
 		348A26DD1BA26162008BCA2F /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 348A26DC1BA26162008BCA2F /* Room.m */; };
 		348A26E01BA26162008BCA2F /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = 348A26DF1BA26162008BCA2F /* Hotel.m */; };
 		34E3AFE81BA34B8B009BBCE3 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E3AFE71BA34B8B009BBCE3 /* MainMenuViewController.m */; };
-		34E3AFEB1BA34CD7009BBCE3 /* GetARoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E3AFEA1BA34CD7009BBCE3 /* GetARoomViewController.m */; };
 		34E3AFEE1BA34CE9009BBCE3 /* ExistingReservationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E3AFED1BA34CE9009BBCE3 /* ExistingReservationsViewController.m */; };
 		34E3AFF11BA355EE009BBCE3 /* RoomListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E3AFF01BA355EE009BBCE3 /* RoomListViewController.m */; };
 /* End PBXBuildFile section */
@@ -72,8 +71,6 @@
 		348A26DF1BA26162008BCA2F /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hotel.m; path = ../Hotel.m; sourceTree = "<group>"; };
 		34E3AFE61BA34B8B009BBCE3 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		34E3AFE71BA34B8B009BBCE3 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
-		34E3AFE91BA34CD7009BBCE3 /* GetARoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetARoomViewController.h; sourceTree = "<group>"; };
-		34E3AFEA1BA34CD7009BBCE3 /* GetARoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetARoomViewController.m; sourceTree = "<group>"; };
 		34E3AFEC1BA34CE9009BBCE3 /* ExistingReservationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExistingReservationsViewController.h; sourceTree = "<group>"; };
 		34E3AFED1BA34CE9009BBCE3 /* ExistingReservationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExistingReservationsViewController.m; sourceTree = "<group>"; };
 		34E3AFEF1BA355EE009BBCE3 /* RoomListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomListViewController.h; sourceTree = "<group>"; };
@@ -135,8 +132,6 @@
 				345E61A21B9E479F00DE80B9 /* HotelListViewController.m */,
 				34E3AFEF1BA355EE009BBCE3 /* RoomListViewController.h */,
 				34E3AFF01BA355EE009BBCE3 /* RoomListViewController.m */,
-				34E3AFE91BA34CD7009BBCE3 /* GetARoomViewController.h */,
-				34E3AFEA1BA34CD7009BBCE3 /* GetARoomViewController.m */,
 				344E08001BA38CF400392491 /* SelectArrivalViewController.h */,
 				344E08011BA38CF400392491 /* SelectArrivalViewController.m */,
 				344E08031BA38D0100392491 /* SelectDepartureViewController.h */,
@@ -288,7 +283,6 @@
 				344E08051BA38D0100392491 /* SelectDepartureViewController.m in Sources */,
 				348A26DA1BA26162008BCA2F /* Guest.m in Sources */,
 				344E08021BA38CF400392491 /* SelectArrivalViewController.m in Sources */,
-				34E3AFEB1BA34CD7009BBCE3 /* GetARoomViewController.m in Sources */,
 				34E3AFE81BA34B8B009BBCE3 /* MainMenuViewController.m in Sources */,
 				345E61781B9E28ED00DE80B9 /* AppDelegate.m in Sources */,
 				34E3AFF11BA355EE009BBCE3 /* RoomListViewController.m in Sources */,

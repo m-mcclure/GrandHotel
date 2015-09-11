@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "MainMenuViewController.h"
 #import "HotelListViewcontroller.h"
-#import "GetARoomViewController.h"
+#import "SelectArrivalViewController.h"
 #import "ExistingReservationsViewController.h"
 
 @interface MainMenuViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -89,8 +89,8 @@
     HotelListViewController *hotelListVC = [[HotelListViewController alloc] init];
     [self.navigationController pushViewController:hotelListVC animated:YES];
   } else if (indexPath.row == 1) {
-    GetARoomViewController *getARoomVC = [[GetARoomViewController alloc] init];
-    [self.navigationController pushViewController:getARoomVC animated:YES];
+    SelectArrivalViewController *selectArrivalVC = [[SelectArrivalViewController alloc] init];
+    [self.navigationController pushViewController:selectArrivalVC animated:YES];
   } else if (indexPath.row == 2) {
     ExistingReservationsViewController *existingReservationsVC = [[ExistingReservationsViewController alloc] init];
     [self.navigationController pushViewController:existingReservationsVC animated:YES];
