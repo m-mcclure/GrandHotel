@@ -2,7 +2,7 @@
 //  Hotel.m
 //  GrandHotel
 //
-//  Created by Matthew McClure on 9/7/15.
+//  Created by Matthew McClure on 9/10/15.
 //  Copyright (c) 2015 Matthew McClure. All rights reserved.
 //
 

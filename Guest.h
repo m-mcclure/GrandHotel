@@ -2,7 +2,7 @@
 //  Guest.h
 //  GrandHotel
 //
-//  Created by Matthew McClure on 9/8/15.
+//  Created by Matthew McClure on 9/10/15.
 //  Copyright (c) 2015 Matthew McClure. All rights reserved.
 //
 
@@ -15,6 +15,14 @@
 
 @property (nonatomic, retain) NSString * firstName;
 @property (nonatomic, retain) NSString * lastName;
-@property (nonatomic, retain) Reservation *reservation;
+@property (nonatomic, retain) NSSet *reservation;
+@end
+
+@interface Guest (CoreDataGeneratedAccessors)
+
+- (void)addReservationObject:(Reservation *)value;
+- (void)removeReservationObject:(Reservation *)value;
+- (void)addReservation:(NSSet *)values;
+- (void)removeReservation:(NSSet *)values;
 
 @end

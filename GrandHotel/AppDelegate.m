@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HotelListViewController.h"
+#import "MainMenuViewController.h"
 #import "Hotel.h"
 #import "Room.h"
 
@@ -25,28 +26,14 @@
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   [self.window makeKeyAndVisible];
   
-  //UIColor *customColor = [[UIColor alloc] initWithRed:240.0 / 255 green:9.0 / 255 blue:142.0 / 255 alpha:1.0];
-
-  
   HotelListViewController *hotelListViewController = [[HotelListViewController alloc] init];
   hotelListViewController.view.backgroundColor = [UIColor whiteColor];
   
-  self.window.rootViewController = hotelListViewController;
+  MainMenuViewController *mainMenuVewController = [[MainMenuViewController alloc]init];
   
-    //NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Hotel"];
+  UINavigationController *hotelNavigationController = [[UINavigationController alloc] initWithRootViewController:mainMenuVewController];
   
-  
-  
-  /*
-  NSError *fetchError;
-  NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&fetchError];
-  
-  NSLog(@"%lu",(unsigned long)results.count);
-  */
-  
-  
-  
-  // Override point for customization after application launch.
+  self.window.rootViewController = hotelNavigationController;
   return YES;
 }
 
@@ -73,7 +60,7 @@
               NSDictionary *hotels = [rootObject objectForKey:@"Hotels"];
               for (NSDictionary *hotel in hotels) {
                 NSString *hotelName = [hotel objectForKey:@"name"];
-                NSString *hotelLocation = [hotel objectForKey:@"location"];
+                //NSString *hotelLocation = [hotel objectForKey:@"location"];
                 NSNumber *hotelStars = [hotel objectForKey:@"stars"];
                 
                 NSNumber *roomNumber;
@@ -82,7 +69,7 @@
                 
                 Hotel *newHotel = [NSEntityDescription insertNewObjectForEntityForName:@"Hotel" inManagedObjectContext:self.managedObjectContext];
                 newHotel.name = hotelName;
-                newHotel.location = hotelLocation;
+                //newHotel.location = hotelLocation;
                 newHotel.stars = hotelStars;
                 
                 
@@ -95,9 +82,9 @@
                       priceTier = [room objectForKey:@"rate"];
                       
                       Room *room = [NSEntityDescription insertNewObjectForEntityForName:@"Room" inManagedObjectContext:self.managedObjectContext];
-                      room.roomNumber = roomNumber;
-                      room.bedCount = bedCount;
-                      room.priceTier = priceTier;
+//                      room.roomNumber = roomNumber;
+//                      room.bedCount = bedCount;
+//                      room.priceTier = priceTier;
                       room.hotel = newHotel;
                     }
                   }

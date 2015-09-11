@@ -2,7 +2,7 @@
 //  Reservation.m
 //  GrandHotel
 //
-//  Created by Matthew McClure on 9/8/15.
+//  Created by Matthew McClure on 9/10/15.
 //  Copyright (c) 2015 Matthew McClure. All rights reserved.
 //
 
@@ -15,7 +15,7 @@
 
 @dynamic arrivalDate;
 @dynamic departureDate;
-@dynamic room;
 @dynamic guest;
+@dynamic room;
 
 @end

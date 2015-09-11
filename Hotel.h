@@ -2,7 +2,7 @@
 //  Hotel.h
 //  GrandHotel
 //
-//  Created by Matthew McClure on 9/7/15.
+//  Created by Matthew McClure on 9/10/15.
 //  Copyright (c) 2015 Matthew McClure. All rights reserved.
 //
 
@@ -13,9 +13,8 @@
 
 @interface Hotel : NSManagedObject
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSNumber *stars;
-@property (nonatomic, retain) NSString *location;
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber * stars;
 @property (nonatomic, retain) NSSet *rooms;
 @end
 
