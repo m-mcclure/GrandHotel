@@ -10,4 +10,7 @@
 
 @interface SelectArrivalViewController : UIViewController
 
+@property (strong, nonatomic) NSDate *arrivalDate;
+@property (strong, nonatomic) NSDate *departureDate;
+
 @end
