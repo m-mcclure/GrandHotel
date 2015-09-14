@@ -125,7 +125,7 @@
   NSLog(@"*****%@", [selectedHotel rooms]);
   
   RoomListViewController *roomListVC = [[RoomListViewController alloc] init];
-  roomListVC.rooms = [selectedHotel rooms];
+  roomListVC.passedHotel = selectedHotel;
   [self.navigationController pushViewController:roomListVC animated:YES];
 }
 

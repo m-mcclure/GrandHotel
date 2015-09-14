@@ -15,6 +15,7 @@
 
 @interface RoomListViewController ()
 
+@property (strong, nonatomic) NSArray *rooms;
 @property (strong, nonatomic) NSMutableArray *roomNumbers;
 
 @end
@@ -23,6 +24,8 @@
 
 -(void)loadView {
   UIView *rootView = [[UIView alloc] init];
+  
+  _rooms = self.passedHotel.rooms.allObjects;
   
   UITableView *tableView = [[UITableView alloc] initWithFrame:rootView.frame style:UITableViewStylePlain];
   self.tableView = tableView;
@@ -44,12 +47,14 @@
   self.tableView.delegate = self;
   self.tableView.dataSource = self;
   
-  for (Room *room in self.rooms) {
-    NSLog(@"#####%@", room.number);
-    [self.roomNumbers addObject:room.number.description];
-  }
+//  
+//  for (Room *room in self.rooms) {
+//    NSLog(@"#####%@", room.number);
+//    [self.roomNumbers addObject:room.number.description];
+//  }
   
   NSLog(@"here here: %lu", (unsigned long)self.rooms.count);
+  NSLog(@"%@", self.passedHotel.name);
 
 }
 
@@ -81,10 +86,8 @@
 //
 //  }
   
-  //NSNumber *roomNum = self.rooms[dataIndex].number;
-  //Room *roomForRow = self.rooms[dataIndex];
-//  NSNumber *roomNum = [self.rooms[dataIndex] number];
-  //cell.textLabel.text = room.number.description;
+  Room *thisRoom = self.rooms[dataIndex];
+  cell.textLabel.text = [NSString stringWithFormat:@"Room #%@", [thisRoom number]];
   cell.textLabel.numberOfLines = 0;
   cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
   

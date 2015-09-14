@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Hotel.h"
 
 @interface RoomListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property(strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) NSSet *rooms;
+@property (strong, nonatomic) Hotel *passedHotel;
 
 @end
